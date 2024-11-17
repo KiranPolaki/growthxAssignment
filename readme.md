@@ -52,7 +52,7 @@ docker-compose up --build
  {username:"saikiran",password:"saikiranpolaki",email:"saikiran@gmail.com"}
 ```
 
-<br/>
+<hr/>
 
 - http://localhost:8000/api/v1/user/login
 - Send a raw body like this below
