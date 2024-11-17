@@ -53,6 +53,7 @@ docker-compose up --build
 ```
 
 <br/>
+
 - http://localhost:8000/api/v1/user/login
 - Send a raw body like this below
 
@@ -60,15 +61,78 @@ docker-compose up --build
  {username:"saikiran",password:"saikiranpolaki",email:"saikiran@gmail.com"}
 ```
 
+- please save the token here to pass it in next steps.
+
 <br/>
+
+<br/>
+
+- http://localhost:8000/api/v1/user/admins
+- Authorization will be Bearer type, pass the saved token here
+
+<br/>
+
+<br/>
+
+- http://localhost:8000/api/v1/user/upload
+- Send a raw body like this below
+- Authorization will be Bearer type, pass the saved token here
+
+```javascript
+ {title:"Assignment1",description:"This is Assignment one",admin:"poorna"}
+```
+
+<br/>
+
+<br/>
+
 #### Admin End points
 
-- http://localhost:8000/api/v1/user/regsiter
+<br/>
+
+- http://localhost:8000/api/v1/admin/regsiter
 - Send a raw body like this below
 
 ```javascript
- {username:"saikiran",password:"saikiranpolaki",email:"saikiran@gmail.com"}
+ {username:"sirsir",password:"sirsirsirsir",email:"sirsirsir@gmail.com"}
 ```
+
+<br/>
+
+<br/>
+
+- http://localhost:8000/api/v1/admin/login
+- Send a raw body like this below
+
+```javascript
+ {username:"sirsir",password:"sirsirsirsir",email:"sirsirsir@gmail.com"}
+```
+
+- please save the token here to pass it in next steps.
+
+<br/>
+
+<br/>
+
+- http://localhost:8000/api/v1/admin/assignments
+- Send a raw body like this below
+- Authorization will be Bearer type, pass the saved token here
+
+<br/>
+
+<br/>
+
+- http://localhost:8000/api/v1/admin/assignments/accept/:id
+- Send id of the and access token
+
+<br/>
+
+<br/>
+
+- http://localhost:8000/api/v1/admin/assignments/reject/:id
+- Send id of the and access token
+
+<br/>
 
 ### MongoDB
 
