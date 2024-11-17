@@ -70,8 +70,6 @@ docker-compose up --build
 
 <hr/>
 
-<br/>
-
 - http://localhost:8000/api/v1/user/upload
 - Send a raw body like this below
 - Authorization will be Bearer type, pass the saved token here
@@ -80,13 +78,11 @@ docker-compose up --build
  {title:"Assignment1",description:"This is Assignment one",admin:"poorna"}
 ```
 
-<br/>
+<hr/>
 
 <br/>
 
 #### Admin End points
-
-<br/>
 
 - http://localhost:8000/api/v1/admin/regsiter
 - Send a raw body like this below
@@ -95,9 +91,7 @@ docker-compose up --build
  {username:"sirsir",password:"sirsirsirsir",email:"sirsirsir@gmail.com"}
 ```
 
-<br/>
-
-<br/>
+<hr/>
 
 - http://localhost:8000/api/v1/admin/login
 - Send a raw body like this below
@@ -108,24 +102,18 @@ docker-compose up --build
 
 - please save the token here to pass it in next steps.
 
-<br/>
-
-<br/>
+<hr/>
 
 - http://localhost:8000/api/v1/admin/assignments
 - Send a raw body like this below
 - Authorization will be Bearer type, pass the saved token here
 
-<br/>
-
-<br/>
+<hr/>
 
 - http://localhost:8000/api/v1/admin/assignments/accept/:id
 - Send id of the and access token
 
-<br/>
-
-<br/>
+<hr/>
 
 - http://localhost:8000/api/v1/admin/assignments/reject/:id
 - Send id of the and access token
