@@ -168,4 +168,4 @@ npm run start
 - If there is any port conflict while running docker, make sure that port 8000 and 27017 is not in use.
 - If you see and Deamon issue please make sure docker desktop is up and runnning
 
-Thats all i can think of right now :)
+Thats all i can think of right now :) wrote this in hurry i will make few changes moving forward
