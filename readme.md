@@ -63,14 +63,12 @@ docker-compose up --build
 
 - please save the token here to pass it in next steps.
 
-<br/>
-
-<br/>
+<hr/>
 
 - http://localhost:8000/api/v1/user/admins
 - Authorization will be Bearer type, pass the saved token here
 
-<br/>
+<hr/>
 
 <br/>
 
