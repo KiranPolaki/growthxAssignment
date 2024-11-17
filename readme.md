@@ -80,8 +80,6 @@ docker-compose up --build
 
 <hr/>
 
-<br/>
-
 #### Admin End points
 
 - http://localhost:8000/api/v1/admin/regsiter
