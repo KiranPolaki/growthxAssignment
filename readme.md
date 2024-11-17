@@ -2,8 +2,8 @@
 
 ## Machine should have these installed as Prerequisites
 
-- nodejs (to run without docker locally)
-- nodemon (to run without docker locally)
+- nodejs (to run without docker)
+- nodemon (to run without docker)
 - Docker
 - Docker Compose
 
@@ -12,8 +12,8 @@
 1. Clone the repository:
 
 ```bash
-git clone
-cd
+git clone https://github.com/KiranPolaki/growthxAssignment.git
+cd growthxAssignment
 ```
 
 2. (Optional) Run without Docker:
@@ -23,13 +23,15 @@ npm i
 npm run dev
 ```
 
+(or)
+
 2. Build and start the containers:
 
 ```bash
 docker-compose up --build
 ```
 
-This will:
+### This will:
 
 - Start a MongoDB instance locally on port 27017 in your computer.
 - Build and start your Node.js application on port 8000
@@ -40,7 +42,17 @@ This will:
 ### API
 
 - API: http://localhost:8000 (addd end points after this)
-- Example of all the end points
+
+#### User End point
+
+- http://localhost:8000/api/v1/user/login
+- Send a raw body like this
+
+```javascript
+ {username:"saikiran",password:"saikiranpolaki",email:"saikiran@gmail.com"}
+```
+
+### MongoDB
 
 - MongoDB: mongodb://localhost:27017
 
