@@ -43,10 +43,28 @@ docker-compose up --build
 
 - API: http://localhost:8000 (addd end points after this)
 
-#### User End point
+#### User End points
 
+- http://localhost:8000/api/v1/user/register
+- Send a raw body like this below
+
+```javascript
+ {username:"saikiran",password:"saikiranpolaki",email:"saikiran@gmail.com"}
+```
+
+<br/>
 - http://localhost:8000/api/v1/user/login
-- Send a raw body like this
+- Send a raw body like this below
+
+```javascript
+ {username:"saikiran",password:"saikiranpolaki",email:"saikiran@gmail.com"}
+```
+
+<br/>
+#### Admin End points
+
+- http://localhost:8000/api/v1/user/regsiter
+- Send a raw body like this below
 
 ```javascript
  {username:"saikiran",password:"saikiranpolaki",email:"saikiran@gmail.com"}
